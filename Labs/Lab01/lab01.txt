@@ -1,0 +1,32 @@
+Mitch Gavars
+CSCI206
+Lab01
+1/15/19
+
+1. One line mkdir   ~/csci206/Labs/Lab01 command, and leaving your lab01.txt in the right place
+
+   mkdir ~/csci206/Labs/Lab01 -p
+
+2.One sentence description of each of the following commands do: cat,  more,  less, head, and tail.
+
+The cat command concatenates the files and prints the output in the terminal.
+The more command filters the text so that it can be viewed one screenful at a time.
+The less command is the same as more but also allows backward movement through the file and starts up faster than other editors with large files.
+The head command only prints the first 10 lines of each file given.
+The tail command only prints the last 10 lines of each file given. 
+
+3.The complete command line to start up emacs without a GUI.
+
+   emacs -nw
+
+4. What is the command to show line numbers in vim?
+
+   :set number 
+
+5. What is the command to show line numbers in emacs?
+
+   M-x linum-mode 
+
+6. Complete this sentence in your file:
+
+   After careful consideration, I will use emacs in csci206 as my text editor.
