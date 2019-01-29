@@ -55,9 +55,9 @@ Exercise 3:
 
 3. lw $t6, 4($s0)
 
-(a) A word is loaded into a register from the specified address. Effectively $s1 = Memory[$s2 + 20]. 
-(b) 
-(c) Destination Register: $s1
+(a) A word is loaded into a register from the specified address. Effectively $t6 = Memory[$s0 + 4]. 
+(b) Source Register: $s0
+(c) Destination Register: $t6
 
 4. add $t3, $s1, $s2
 
