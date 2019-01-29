@@ -1,5 +1,5 @@
 Mitch Gavars
-Lab03 - Prelab
+Lab03 8am - Prelab
 Introduction to MIPS Programming
 1/28/2019
 
