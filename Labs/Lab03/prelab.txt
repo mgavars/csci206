@@ -1,0 +1,97 @@
+Mitch Gavars
+Lab03 - Prelab
+Introduction to MIPS Programming
+1/28/2019
+
+Exercise 1:
+
+Q1: How do you compile your program so that you get extra debugging information (variable and function names, line numbers, and so on) in gdb?
+
+    cc -g sourcefile.c
+
+Q2: What is the syntax of the command to set a breakpoint at line 50 that you would type at the gdb prompt?
+
+    b 50
+
+Q3: Assume that your program has an integer called count, that you started the execution of the program in gdb and that it is stopped at a breakpoint: what is the syntax of the gdb command to print the value of count?
+
+    disp count
+
+Q4: Again, assume that your program is stopped at a breakpoint in gdb, what is the syntax of the command to change the value of the integer count to 42?
+
+    set variable count = 42
+
+
+
+Exercise 2:
+
+Register $at (1) stands for "Assembler Temporary". It is used for temporary values and is not preserved across fuction calls.
+
+Registers $a0-$a3 (4—7) are "argument registers". They are used for the function arguments. This means that up to four function arguments can be passes through these registers.
+
+Registers $t0-$t9 (8—15, 24, 25) are caller-saved registers. When calling a function, $t registers cannot guarantee that the register will be the same after the function call. If you are not calling functions, then $t and $s registers can be used interchangeably. 
+
+Registers $s0-$s7 (16—23) are callee-saved registers. This menas when calling a function, the registers are guaranteed to be the same after the function call.
+
+Register $gp (28) is a global pointer that points to a global data area. This means that it can be accessed with memory offset addressing. Always store it in the Saved Register Area of your stack. 
+
+Register $sp (29) is the stack pointer, which points to the last location on the stack. You can access elements in the stack if you know where it is relative to $sp. 
+
+
+Exercise 3: 
+
+1. add $s1, $s2, $s3
+
+(a) Adds the values contained in the two source  registers; stores the result into the destination register. Effectively: $s1 = $s2 + $s3.
+(b) Source Registers: $s2, $s3
+(c) Destination Register: $s1
+
+2. addi $s1, $s3, 2
+
+(a) Adds one immediate (constant) value with a value of a stored register into the destination register. Effectively $s1 = $s3 + 2.
+(b) Source Register: $s3
+    Constant: 2
+(c) Destination Register: $s1
+
+3. lw $t6, 4($s0)
+
+(a) A word is loaded into a register from the specified address. Effectively $s1 = Memory[$s2 + 20]. 
+(b) 
+(c) Destination Register: $s1
+
+4. add $t3, $s1, $s2
+
+(a) Adds the values contained in the two source registers; stores the result into the destination temporary register. Effectively: $t3 = $s1 + $s2.
+(b) Source Registers: $s1, $s2.
+(c) Destination Register: $t3
+
+5. sub $v0, $t1, $s2
+
+(a) Subracts the value in the second source register from the value in the first source register into the return value destination register. Effectively $v0 = $t1 - $s2.
+(b) Source Registers: $t1, $s2
+(c) Destination Register: $v0
+
+
+Exercise 4: 
+
+1. 59 (base 10) to 8-bit binary
+
+   59 = 32 + 16 + 8 + 2 + 1 = 2^5 + 2^4 + 2^3 + 2^1 + 2^0 = 00111011
+
+2. 10111011 (base 2) to 8-bit hexadecimal
+
+   10111011 = 0000 0000 0000 0000 0000 0000 1011 1011 = 000000BB
+
+3. 129 (base 10) to 8-bit hexadecimal
+
+   129 = 128 + 1 = 2^7 + 2^0 = 10000001
+   10000001 = 0000 0000 0000 0000 0000 0000 1000 0001 = 00000081   
+
+4. 0xFEEDBEEF (base 16) to binary (use as many bits as required)
+
+   FEEDBEEF = 1111 1110 1110 1101 1011 1110 1110 1111 
+   = 11111110111011011011111011101111
+   
+5. 0743 (base 8) to binary (use as many bits as required)
+
+   0743 = 000 111 100 011 = 000111100011
