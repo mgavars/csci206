@@ -1,0 +1,27 @@
+------------------------------------------------------------
+Lab02 feedback for Gavars Mitch (mag051)
+------------------------------------------------------------
+prelab: [25 points] Prelab reading / activities (zybook).
+	Score: 24 / 25
+	Comment: 3.14 not finished, 3.20 missing (96%)
+
+isalary: ex1 salary and isalary correct and have all header information.
+	Score: 10 / 10
+	Comment: header information should be isalary
+
+nogood and fsalary: nogood and fsalary correct and compile without warning with -Wall. -5 for each
+warning, -15 for an error
+	Score: 19 / 20
+	Comment: should be up to $0.01
+
+as and ld: nogood.s and nogood.o exist.
+	Score: 10 / 10
+cvp: primefact.py and primefact.c exist, compile without warning, and speedup is
+reasonable (noted in primefact.c).
+	Score: 25 / 25
+change case: switchcase.c compiles without warning and operates correctly.
+	Score: 10 / 10
+------------------------------------------------------------
+TOTAL 98.0 / 100.0
+------------------------------------------------------------
+
