@@ -19,7 +19,7 @@
 # THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 #
-# Student name:
+# Student name: Mitch Gavars
 #
 # data segment -------------------------------------
 .data	 
@@ -31,6 +31,8 @@ ivar:
 .word 0 			# int i
 kvar:
 .word 0 			# int k
+promptstring:
+.asciiz "Enter a value to search for: "
 donestring:
 .asciiz "loop terminated, i= "
 failedstring:
@@ -43,6 +45,11 @@ init:
 	li 	$s5, 7 		# store 7 in k
 	sw 	$s5, kvar
         la 	$s4, save 	# put the address of save[0] in $s4
+        
+        la	$a0, promptstring
+	li	$v0, 4
+	syscall
+	
         li  	$v0, 5
 	syscall
 	add 	$t0, $v0, $zero 	# $t0 = userInput
