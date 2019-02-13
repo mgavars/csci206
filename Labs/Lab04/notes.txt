@@ -1,0 +1,57 @@
+Mitch Gavars
+Lab04, Exercise 2
+02/05/19 8am
+file: notes.txt
+description: some descriptions of functions
+
+
+creat(2): 
+	  Opens and possibly creates a file or device. The creat() function has 2 parameters: one being a pointer to a pathname and the other being an access mode. Returns the new file descriptor.
+
+
+open(2):
+	 Opens and possibly creates a file or device. The open() function has 2 parameters: one being a pointer to a pathname and the other being a file creation or file status flag. Returns the new file descriptor.
+
+
+read(2):
+	Read reads from a file descriptor. The function call requires 3 arguments: one being the file descriptor (int), one being a pointer to a buffer starting location (void; we will learn more about this void *buf later), and one being a count to determind how many bytes to read up to. 
+
+
+write(2):
+	Write to a file descriptor. Function call takes the 3 same arguments as read(), except that the count argument now refers to how many bytes can be written rather than read. 
+
+
+close(2):
+	Closes a file descriptor. Only takes 1 parameter of the file descriptor of which you wish to close. Returns 0 on success of closure. 
+
+
+
+fopen(3):
+	Takes in a pathname which is the name of a file and opens it. It will be assigned a specific assignment through the inputted mode. File will then be opened up specifically (ex. for reading).
+
+fgets(3):
+	This reads in information that fopen opened up. The information that this function gets is stored in a buffer.
+
+
+fprintf(3):
+	This takes in the file stream as well as a constant character. Prints the specified information to the stream.
+
+fseek(3):
+	This function has 3 parameters: the stream, a long number (offset), and an integer (whence). The two numbers in the parameter are added up to determine where the stream pointer will point to next. 
+
+fclose(3):
+	This function has 1 parameter: an integer that corresponds to a file. When called, the close function removes the pointer from the file so that it may be used again in another open. 
+
+
+
+Exercise 5:
+1: Hello
+ --> Hello
+2. world,
+ --> world
+3: how
+ --> how
+4: are
+ --> are
+5: you?
+ --> you
