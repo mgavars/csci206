@@ -1,0 +1,51 @@
+Mitch Gavars
+Lab05
+02/12/19
+
+Exercise 1:
+
+Segment		|     Start	|      End	|     Size
+--------------------------------------------------------------
+Stack		|0x7fff ff85	|0x7fff ffff	|0x7a bytes	#main() 0x16 bytes, printf() 0x64 bytes
+Heap		|0x0040 0298	|0x0040 0298	|0x0 bytes	#unused	
+Data		|0x0040 0100	|0x0040 0297	|0x197 bytes	#102 integers * 4 bytes per integer
+Text		|0x0040 0000	|0x0040 0099	|0x100 bytes	add 0x99 bytes
+
+#Text uses 256 bytes in decimal so add 255 to the start address of the text.
+#Data starts where text ends. Data uses 408 bytes for 102 integers so add 407 to the start address of data.
+#Heap is unchanged	
+
+Exercise 2: Syscalls
+
+    1. read an integer from the keyboard into $t0
+       	    li  $v0, 5
+			syscall
+	        add $t0, $v0, $zero
+	    
+
+    2. print an integer in $t0 to the terminal
+       	     li  $v0, 1
+	     add $a0, $t0, $zero
+	     syscall
+
+    3. read from the keyboard a string and store it at the address corresponding to the label my_str
+       	    li $v0, 8
+	    la $a0, my_str
+	    li $a1, 100
+	    syscall
+
+    4. print to the terminal a string declared at the address corresponding to the label prompt
+
+       	     li $v0, 4
+	     la $a0, prompt
+	     syscall
+
+    5. exit a program returning with the value -1
+       	     li   $v0, 1
+	     addi $a0, $zero, -1
+	     syscall
+
+	     li $v0, 10
+	     syscall
+	     
+
