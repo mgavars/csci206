@@ -8,11 +8,16 @@
 #include <string.h>
 #include <stdlib.h>
 
-struct snode * snode_create(char *s, int length){
-  struct snode *new = malloc(sizeof(struct snode));
-  //new->str = malloc(sizeof(char) * (length + 1));
+struct snode * snode_create(char *s){
+  struct snode *new = (struct snode*)malloc(sizeof(struct snode));
+  new->str = malloc(sizeof(char) * (sizeof(s) + 1));
   strcpy(new->str, s);
-  new->length = length;
   new->next = NULL;
   return new;
+}
+
+void snode_destroy(struct snode *n){
+  n->next = NULL;
+  free(n->str);
+  free(n);
 }

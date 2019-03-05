@@ -5,9 +5,10 @@
  */
 
 struct snode {
-  char str[100];
-  int length;
+  char *str;
   struct snode *next;
 };
 
-struct snode *snode_create(char *s, int length);
+struct snode *snode_create(char *s);
+
+void snode_destroy(struct snode *n);
