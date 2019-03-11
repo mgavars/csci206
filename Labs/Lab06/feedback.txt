@@ -1,0 +1,36 @@
+------------------------------------------------------------
+Lab06 feedback for Gavars Mitch (mag051)
+------------------------------------------------------------
+Leaf Procedure: Leaf procedure implemented in prelab.s. Function returns the proper value. The
+static variable C is properly defined in the data segment. $ra is noted for
+the two calls to my_func in a comment.
+	Score: 10 / 15
+	Comment: Result for my_func(5,6): 8 -> should be 7. I think you mean the sum of them here -0
+Need to load C to a register -2
+$ra is not noted for the two calls to my_func in a comment. -3
+
+Collatz in C: collatz.c is completed correctly using a recursive function (find_length) and
+a leaf function (collatz). C Coding conventions are followed (including adding
+good comments and compilation instructions or a makefile).
+	Score: 10 / 10
+xfind: (3 points) for documenting register assignments; (2 points) for commenting
+code; (15 points) for correct functionality.
+	Score: 18 / 20
+	Comment: (3 points) for documenting register assignments; -2 (t?)
+
+largeproc: (5 points) for documenting register assignments; (5 points) for commenting
+code; (5 points) for correct stack frame for small_proc; (5 points) for
+correct stack frame for large_proc; (10 points) for correct functionality.
+	Score: 25 / 30
+	Comment: (5 points) for documenting register assignments; -5
+
+collatz: (3 points) for documenting register assignments; (2 points) for commenting
+code; (10 points) for correct stack frames in all procedures; (10 points) for
+correct functionality.
+	Score: 22 / 25
+	Comment: (3 points) for documenting register assignments;  -3
+
+------------------------------------------------------------
+TOTAL 85.0 / 100.0
+------------------------------------------------------------
+
