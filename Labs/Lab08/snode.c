@@ -19,5 +19,6 @@ struct snode * snode_create(char *s){
 void snode_destroy(struct snode *n){
   n->next = NULL;
   free(n->str);
+  free(n->next);
   free(n);
 }
