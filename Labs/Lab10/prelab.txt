@@ -1,0 +1,16 @@
+Mitch Gavars	
+Prelab10 - prelab.txt
+3/25/19
+
+Max Double:
+1.7976931348623157 x 10^308
+Min Double:
+2.2250738585072014 x 10^-308
+
+The sign bit is represented by a 0 or a 1. A 0 corresponds to a positive number while a 1 corresponds to a negative number.
+
+Determine the floating point value. Move the decimal point over so it is in sicntific notation. Determine the exponent value of the IEE754 representation by adding the exponent to the biased value. The exponent value is then converted into binary and this will be used in the representation. 
+
+Calculate the mantissa by using the values after the decimal point of the number in scientific notation. The mantissa value is the decimal point number with 0's added to the end of it until the proper amount of bits are reached. If the decimal is repeating, just write the repetition until the correct amount of bits is reached.
+
+The IEEE754 representation is the sign bit, the exponent, and the mantissa.
