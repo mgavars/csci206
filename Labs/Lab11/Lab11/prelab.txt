@@ -1,0 +1,23 @@
+Mitch Gavars
+Professor Meng
+T 8am
+Prelab11 - prelab.txt
+4/1/19
+
+(1.1) 
+On many C implementations it is possible to corrupt the execution stack by writing past the end of an array declared auto in a routine. Code that does this is said to smash the stack, and can cause return from the routine to jump to a random address. 
+
+(1.2)
+The user gains control of the stack and can write past the end of the allotted space on the track.
+
+(1.3)
+Yes, they both store the value of the return address.
+
+(1.4)
+It looks different becaude gdb is a debugger.
+
+(1.5)
+The first equation sets the return value to an integer pointer that points to buffer1+24 whereas the second equation increments the pointer of the return value by 16.
+
+(1.7)
+24 is moving up 6 words and 16 is moving up 4 words.
