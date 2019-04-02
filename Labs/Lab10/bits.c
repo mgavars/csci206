@@ -208,7 +208,7 @@ void test_negate(void)
  */
 int is_positive(int x)
 {
-      return !((x&(1<<31)) | !x);
+      return !((x & ( 1 << 31)) | !x);
    
 }
 
