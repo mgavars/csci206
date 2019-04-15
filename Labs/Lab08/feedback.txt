@@ -1,0 +1,28 @@
+------------------------------------------------------------
+Lab08 feedback for Gavars Mitch (mag051)
+------------------------------------------------------------
+prelab: snode.h: snode.h has a working definition of struct snode and declaration for
+snode_create.
+	Score: 7 / 10
+	Comment: Pre-lab is not saved
+
+prelab: snode.c: snode.c has a correct snode_create that uses malloc and strcpy; -3 if it does
+not set length, str, or next.
+	Score: 10 / 10
+prelab: snode-test: snode-test works and compiles with a valid Makefile.
+	Score: 5 / 5
+snond_test: snode.h / .c created and snode_test.c runs without memory leaks.
+	Score: 20 / 20
+slist: slist.h created with basic function heading list header, 5 points; slist.c
+completed correctly. Each of the functions create, destroy, add_front,
+add_back, traverse, find, length, 7 points each.
+	Score: 40 / 40
+song_list: song_list runs correctly (10 points) without memory leaks (5 points).
+	Score: 10 / 15
+	Comment: Valgrind gives errors with invalid read/write,
+without memory leaks (5 points) (-5)
+
+------------------------------------------------------------
+TOTAL 92.0 / 100.0
+------------------------------------------------------------
+
