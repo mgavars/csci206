@@ -1,0 +1,12 @@
+pre1:10.0,
+pre2:5.0,
+pre3:10.0,
+ex1:14.0, typo in Makefile (-1)
+ex2:5.0, counte gives errors
+counte.c: In function ‘main’:
+counte.c:19:9: error: ‘str’ undeclared (first use in this function)
+ex3:5.0,matrix-sum Makefile has errors, gives errors
+ex4:5.0, time doesn’t add the time
+
+Total: 54.0/100.0
+
