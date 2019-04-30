@@ -1,0 +1,28 @@
+Mitch Gavars
+Lab14 - answers.txt
+4/23/19
+
+
+(2.1) What do you observe when the block size is increased from 8 to 64? What principle of cache operation is responsible for this effect?
+
+The demand missed decrease when the block size is increased from 8 to 64. This is because the block size of 64 is larger than the block size of 8. The compulsory misses are responsible for this.
+
+
+(2.2) What do you observe when you double the size of the cache (from 8K to 16K) while keeping the block size at 8? Explain these results.
+
+The demand missed decreased when the size of the cache is doubled from 8k to 16k. This was caused by the capacity misses decreasing by about 20,000 while the cache size increased. The conflict misses increased slightly when the size of the cache got larger, but compulsory misses stayed the same.
+
+
+(2.3) What is the performance of a caches with size 32K, 64K, 128K, 256K, and 512K using a block size of 32? Look at results other than total demand miss rate and comment on the changes.
+
+The demand misses increased as the cache size increased. The capacity misses eventually fall to 0 with the increasing cache size, the compulsory misses stay the same, and the conflict misses decrease every time the cache size is increased.
+
+
+(2.4) What is the effect of setting 2-way and 4-way set associativity for a unified 8K cache with a block size of 8? Explain your findings.
+
+The demand misses increase from 2-way to 4-way. The compulsory misses remains the same for both ways. The capacity misses increase slightly, but not really enough to make a big difference. Finally, the conflict misses nearly double when the setting goes from a 2-way to a 4-way.
+
+
+(2.5) What is the effect of setting 2-way and 4-way set associativity for a unified 128K cache with a block size of 8? Compare to previous results and explain your findings.
+
+The demand misses only decrease by about 300 when the setting is changed from 2-way to 4-way. The compulsory misses stay the same, the capacity misses decrease by one, andthe conflict misses decrease by 334. There are fewer changes in demand misses between 2-way and 4-way as the size of the cache increases.
