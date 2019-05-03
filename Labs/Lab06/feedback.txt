@@ -15,22 +15,16 @@ good comments and compilation instructions or a makefile).
 	Score: 10 / 10
 xfind: (3 points) for documenting register assignments; (2 points) for commenting
 code; (15 points) for correct functionality.
-	Score: 18 / 20
-	Comment: (3 points) for documenting register assignments; -2 (t?)
-
+	Score: 20 / 20
 largeproc: (5 points) for documenting register assignments; (5 points) for commenting
 code; (5 points) for correct stack frame for small_proc; (5 points) for
 correct stack frame for large_proc; (10 points) for correct functionality.
-	Score: 25 / 30
-	Comment: (5 points) for documenting register assignments; -5
-
+	Score: 30 / 30
 collatz: (3 points) for documenting register assignments; (2 points) for commenting
 code; (10 points) for correct stack frames in all procedures; (10 points) for
 correct functionality.
-	Score: 22 / 25
-	Comment: (3 points) for documenting register assignments;  -3
-
+	Score: 25 / 25
 ------------------------------------------------------------
-TOTAL 85.0 / 100.0
+TOTAL 95.0 / 100.0
 ------------------------------------------------------------
 
