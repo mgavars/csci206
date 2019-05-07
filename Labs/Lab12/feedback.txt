@@ -2,7 +2,7 @@
 Lab12 feedback for Gavars Mitch (mag051)
 ------------------------------------------------------------
 prelab: questions: Correct pin numbers for minibombs (9876, 67...) [15pts each].
-	Score: 15 / 30
+	Score: 10 / 30
 	Comment: Note: the bomb lab is out of 70, prelab is 5 points extra each.
 
 bomblab: Bomblab score.
@@ -10,6 +10,6 @@ bomblab: Bomblab score.
 	Comment: phase1
 
 ------------------------------------------------------------
-TOTAL 35.0 / 100.0
+TOTAL 30.0 / 100.0
 ------------------------------------------------------------
 
